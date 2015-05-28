@@ -7,7 +7,7 @@ Features include:
 
 - Flight Status
 
-Documentationaaa
+Documentation
 -------------
 
 For usage documentation, see:

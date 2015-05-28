@@ -16,10 +16,10 @@
     },
 
     "autoload": {
-        "psr-0": { "UnitedWorldWrestling\\FlightStatsBundle": "" }
+        "psr-0": { "UnitedWorldWrestling\\Bundle\\FlightStatsBundle": "" }
     },
 
-    "target-dir": "UnitedWorldWrestling/FlightStatsBundle",
+    "target-dir": "UnitedWorldWrestling/Bundle/FlightStatsBundle",
 
     "extra": {
         "branch-alias": {
