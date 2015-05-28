@@ -21,7 +21,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new UnitedWorldWrestling\Bundle\FlightStatsBundle(),
+        new UnitedWorldWrestling\Bundle\FlightStatsBundle\UnitedWorldWrestlingFlightStatsBundle(),
         // ...
     );
 }
