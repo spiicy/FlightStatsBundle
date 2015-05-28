@@ -1,0 +1,29 @@
+{
+    "name": "unitedworldwrestling/flightstats-bundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides a wrapper for the FlightStats API",
+    "keywords": ["rest", "api", "flight", "flightstats"],
+    "homepage": "https://unitedworldwrestling.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Veyrat",
+            "email": "emmanuel@unitedworldwrestling.org"
+        }
+    ],
+
+    "require": {
+    },
+
+    "autoload": {
+        "psr-0": { "UnitedWorldWrestling\\FlightStatsBundle": "" }
+    },
+
+    "target-dir": "UnitedWorldWrestling/FlightStatsBundle",
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
