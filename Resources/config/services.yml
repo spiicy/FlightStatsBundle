@@ -1,0 +1,4 @@
+services:
+#    united_world_wrestling_flight_stats.example:
+#        class: UnitedWorldWrestling\Bundle\FlightStatsBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
