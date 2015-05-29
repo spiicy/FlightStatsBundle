@@ -28,3 +28,18 @@ public function registerBundles()
 ```
 
 
+## Config
+
+Add the following lines:
+
+``` yml
+// app/config/config.yml
+united_world_wrestling_flight_stats:
+    app_id: <your id>
+    app_key: <your key>
+```
+
+
+
+
+
