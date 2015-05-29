@@ -1,4 +1,7 @@
+parameters:
+    uww_flightstats.class: UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\FlightStats
+
 services:
-#    united_world_wrestling_flight_stats.example:
-#        class: UnitedWorldWrestling\Bundle\FlightStatsBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    uww_flightstats:
+      class: %uww_flightstats.class%
+      arguments: [%united_world_wrestling_flight_stats.config%]

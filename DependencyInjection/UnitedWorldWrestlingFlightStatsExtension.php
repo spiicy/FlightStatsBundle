@@ -24,5 +24,6 @@ class UnitedWorldWrestlingFlightStatsExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        $container->setParameter('united_world_wrestling_flight_stats.config',$config);
     }
 }

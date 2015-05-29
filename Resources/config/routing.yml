@@ -1,3 +1,0 @@
-united_world_wrestling_flight_stats_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: UnitedWorldWrestlingFlightStatsBundle:Default:index }

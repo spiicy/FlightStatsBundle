@@ -20,9 +20,10 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('united_world_wrestling_flight_stats');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode->children()
+            ->scalarNode('app_id')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('app_key')->isRequired()->cannotBeEmpty()->end()
+        ->end();
 
         return $treeBuilder;
     }
