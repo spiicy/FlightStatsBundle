@@ -38,4 +38,26 @@ class FlightStats extends RestClient
         return new Methods\Schedules($this->config, $api);
     }
 
+    /**
+     *
+     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\Airlines
+     */
+    public function getAirlines()
+    {
+        $api = $this->apiUrl . 'airlines/rest/v1/json/';
+        
+        return new Methods\Airlines($this->config, $api);
+    }
+
+    /**
+     *
+     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\Airports
+     */
+    public function getAirports()
+    {
+        $api = $this->apiUrl . 'airports/rest/v1/json/';
+        
+        return new Methods\Airports($this->config, $api);
+    }
+
 }
