@@ -18,7 +18,7 @@ class Schedules extends RestClient {
      * @throws \Exception
      * @throws FlightStatsAPIException
      */
-    public function scheduleByFlightNumber($carrier, $flight, $arrival) {
+    public function scheduleArrivalByFlightNumber($carrier, $flight, $arrival) {
         
         $params = array(
             'carrier' => $carrier,
@@ -29,6 +29,41 @@ class Schedules extends RestClient {
         );
 
         $apiCall = sprintf('flight/%s/%s/arriving/%d/%d/%d', $params['carrier'], $params['flight'], $params['year'], $params['month'], $params['day']);
+
+        $res = $this->request($apiCall);
+
+        $code = $res->getStatusCode();
+        $json = json_decode($res->getBody()->getContents(), true);
+        
+        if (isset($json['error'])) {
+            throw new FlightStatsAPIException($json);
+        } else {
+            return isset($json) ? $json : false;
+        }
+    }
+
+    /**
+     * Scheduled Flight(s) by carrier and flight number, departing on the given date.
+     * 
+     * @link https://developer.flightstats.com/api-docs/flightstatus/v2/flight
+     * @param string $carrier
+     * @param string $number 
+     * @param \DateTime $departure
+     * @return JSON
+     * @throws \Exception
+     * @throws FlightStatsAPIException
+     */
+    public function scheduleDepartureByFlightNumber($carrier, $flight, $departure) {
+        
+        $params = array(
+            'carrier' => $carrier,
+            'flight' => $flight,
+            'year' => $departure->format('Y'),
+            'month' => $departure->format('m'),
+            'day' => $departure->format('d'),
+        );
+
+        $apiCall = sprintf('flight/%s/%s/departing/%d/%d/%d', $params['carrier'], $params['flight'], $params['year'], $params['month'], $params['day']);
 
         $res = $this->request($apiCall);
 

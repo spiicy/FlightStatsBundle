@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.5.0",
         "symfony/framework-bundle": "2.*",
-        "guzzlehttp/guzzle": "6.x"
+        "guzzlehttp/guzzle": "5.3"
     },
 
     "autoload": {
