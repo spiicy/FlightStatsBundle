@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "This Bundle provides a wrapper for the FlightStats API",
     "keywords": ["rest", "api", "flight", "flightstats"],
-    "homepage": "https://spiicy.io",
+    "homepage": "http://spiicy.io",
     "license": "MIT",
     "authors": [
         {
