@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats;
+namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats;
 
 use GuzzleHttp\Client;
 

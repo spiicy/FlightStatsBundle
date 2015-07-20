@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitedWorldWrestling\Bundle\FlightStatsBundle\DependencyInjection;
+namespace Spiiicy\Bundle\FlightStatsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('united_world_wrestling_flight_stats');
+        $rootNode = $treeBuilder->root('spiiicy_flight_stats');
 
         $rootNode->children()
             ->scalarNode('app_id')->isRequired()->cannotBeEmpty()->end()

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods;
+namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods;
 
-use UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\RestClient;
-use UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\FlightStatsAPIException;
+use Spiiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
+use Spiiicy\Bundle\FlightStatsBundle\FlightStats\FlightStatsAPIException;
 
 class Airports extends RestClient {
 

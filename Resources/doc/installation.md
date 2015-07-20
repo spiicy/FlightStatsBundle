@@ -7,7 +7,7 @@ Add FlightStatsBundle by running this command from the terminal at the root of
 your Symfony project:
 
 ```bash
-php composer.phar require unitedworldwrestling/flightstats-bundle 
+php composer.phar require spiiicy/flightstats-bundle 
 ```
 
 
@@ -21,7 +21,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new UnitedWorldWrestling\Bundle\FlightStatsBundle\UnitedWorldWrestlingFlightStatsBundle(),
+        new Spiiicy\Bundle\FlightStatsBundle\SpiiicyFlightStatsBundle(),
         // ...
     );
 }
@@ -34,7 +34,7 @@ Add the following lines:
 
 ``` yml
 // app/config/config.yml
-united_world_wrestling_flight_stats:
+spiiicy_flight_stats:
     app_id: <your id>
     app_key: <your key>
 ```

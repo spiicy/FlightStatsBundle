@@ -1,7 +1,7 @@
 parameters:
-    uww_flightstats.class: UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\FlightStats
+    spiiicy_flightstats.class: Spiiicy\Bundle\FlightStatsBundle\FlightStats\FlightStats
 
 services:
-    uww_flightstats:
-      class: %uww_flightstats.class%
-      arguments: [%united_world_wrestling_flight_stats.config%]
+    spiiicy_flightstats:
+      class: %spiiicy_flightstats.class%
+      arguments: [%spiiicy_flight_stats.config%]

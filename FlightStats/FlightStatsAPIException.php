@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats;
+namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats;
 
 class FlightStatsAPIException extends \Exception {
 

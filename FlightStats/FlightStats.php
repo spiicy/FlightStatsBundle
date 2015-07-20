@@ -1,8 +1,8 @@
 <?php
 
-namespace UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats;
+namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats;
 
-use UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\RestClient;
+use Spiiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
 
 class FlightStats extends RestClient
 {
@@ -18,7 +18,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\FlightStatus
+     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\FlightStatus
      */
     public function getFlightStatus()
     {
@@ -29,7 +29,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\Schedules
+     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Schedules
      */
     public function getSchedules()
     {
@@ -40,7 +40,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\Airlines
+     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airlines
      */
     public function getAirlines()
     {
@@ -51,7 +51,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \UnitedWorldWrestling\Bundle\FlightStatsBundle\FlightStats\Methods\Airports
+     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airports
      */
     public function getAirports()
     {

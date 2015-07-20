@@ -12,7 +12,7 @@ Documentation
 
 For usage documentation, see:
 
-[Resources/doc/index.md](https://github.com/unitedworldwrestling/FlightStatsBundle/blob/master/Resources/doc/index.md)
+[Resources/doc/index.md](https://github.com/spiiicy/FlightStatsBundle/blob/master/Resources/doc/index.md)
 
 License
 -------

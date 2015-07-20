@@ -1,14 +1,14 @@
 {
-    "name": "unitedworldwrestling/flightstats-bundle",
+    "name": "spiiicy/flightstats-bundle",
     "type": "symfony-bundle",
     "description": "This Bundle provides a wrapper for the FlightStats API",
     "keywords": ["rest", "api", "flight", "flightstats"],
-    "homepage": "https://unitedworldwrestling.org",
+    "homepage": "https://spiicy.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Emmanuel Veyrat",
-            "email": "emmanuel@unitedworldwrestling.org"
+            "email": "emmanuel@spiicy.io"
         }
     ],
 
@@ -19,10 +19,10 @@
     },
 
     "autoload": {
-        "psr-0": { "UnitedWorldWrestling\\Bundle\\FlightStatsBundle": "" }
+        "psr-0": { "spiiicy\\Bundle\\FlightStatsBundle": "" }
     },
 
-    "target-dir": "UnitedWorldWrestling/Bundle/FlightStatsBundle",
+    "target-dir": "spiiicy/Bundle/FlightStatsBundle",
 
     "minimum-stability": "dev",
 
