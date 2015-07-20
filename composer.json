@@ -19,10 +19,10 @@
     },
 
     "autoload": {
-        "psr-0": { "spiiicy\\Bundle\\FlightStatsBundle": "" }
+        "psr-0": { "Spiiicy\\Bundle\\FlightStatsBundle": "" }
     },
 
-    "target-dir": "spiiicy/Bundle/FlightStatsBundle",
+    "target-dir": "Spiiicy/Bundle/FlightStatsBundle",
 
     "minimum-stability": "dev",
 
