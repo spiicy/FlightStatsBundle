@@ -9,6 +9,38 @@ class Alerts extends RestClient
 {
 
     /**
+     * Returns at most the last thousand Alert Rule IDs. 
+     * See the alternative form of this to specify the max Rule ID, which allows for iteration over all Rule IDs.
+     * 
+     * @link https://developer.flightstats.com/api-docs/alerts/v1
+     * @param string $rule_id
+     * @return JSON
+     * @throws \Exception
+     * @throws FlightStatsAPIException
+     */
+    public function listAlert() {
+
+        $apiCall = sprintf('list');
+
+        $res = $this->request($apiCall, [
+                "query" => [
+                    "appId" => $this->config['app_id'],
+                    "appKey" => $this->config['app_key']
+                ]
+            ]);
+
+        $code = $res->getStatusCode();
+        $json = json_decode($res->getBody()->getContents(), true);
+        
+        if (isset($json['error'])) {
+            throw new FlightStatsAPIException($json);
+        } else {
+            return isset($json) ? $json : false;
+        }
+
+    }
+
+    /**
      * Create a flight rule to be monitored for a specific flight departing from an airport on the given day. 
      * Returns the fully constructed flight rule that was created.
      * 
