@@ -65,4 +65,35 @@ class Alerts extends RestClient
 
     }
 
+    /**
+     * Deletes a flight rule that was previously created given a rule ID. Returns the flight rule that was deleted.
+     * Note that once deleted any subsequent calls with the same ID will return a rule not found exception.
+     * 
+     * @link https://developer.flightstats.com/api-docs/alerts/v1
+     * @param string $rule_id
+     * @return JSON
+     * @throws \Exception
+     * @throws FlightStatsAPIException
+     */
+    public function deleteByRuleId($rule_id) {
+
+        $params = array(
+            'rule_id' => $rule_id
+        );
+
+        $apiCall = sprintf('delete/%d', $rule_id);
+
+        $res = $this->request($apiCall);
+
+        $code = $res->getStatusCode();
+        $json = json_decode($res->getBody()->getContents(), true);
+        
+        if (isset($json['error'])) {
+            throw new FlightStatsAPIException($json);
+        } else {
+            return isset($json) ? $json : false;
+        }
+
+    }
+
 }
