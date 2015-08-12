@@ -66,7 +66,7 @@ class FlightStats extends RestClient
      */
     public function getAlerts()
     {
-        $api = $this->apiUrl . '';
+        $api = $this->apiUrl . 'alerts/rest/v1/json/';
         
         return new Methods\Alerts($this->config, $api);
     }
