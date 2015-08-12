@@ -38,7 +38,6 @@ class Alerts extends RestClient
             'day' => $departure->format('d'),
         );
 
-        // $apiCall = sprintf('create/%s/%s/from/%s/departing/%d/%d/%d?type=JSON&events=%s&deliverTo=%s', 
         $apiCall = sprintf('create/%s/%s/from/%s/departing/%d/%d/%d', 
                 $params['carrier'], 
                 $params['flight'], 
