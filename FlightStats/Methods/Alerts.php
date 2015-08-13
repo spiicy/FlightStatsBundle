@@ -13,7 +13,6 @@ class Alerts extends RestClient
      * See the alternative form of this to specify the max Rule ID, which allows for iteration over all Rule IDs.
      * 
      * @link https://developer.flightstats.com/api-docs/alerts/v1
-     * @param string $rule_id
      * @return JSON
      * @throws \Exception
      * @throws FlightStatsAPIException
