@@ -56,8 +56,10 @@ class Alerts extends RestClient
         $flight, 
         $departure_airport, 
         $departure, 
-        $events = "dep,can,div,preDep30,depLate30,depDelay,depGate"
+        $events = "dep,arr,can,div,preDep30,depLate30,depDelay,depGate"
     ) {
+
+        $alert_name = sprintf('%s_%s_%s_%d', $carrier, $flight, $departure_airport, $departure->format('Y-m-d'));
 
         $params = array(
             'carrier' => $carrier,
@@ -68,6 +70,7 @@ class Alerts extends RestClient
             'month' => $departure->format('m'),
             'day' => $departure->format('d'),
         );
+
 
         $apiCall = sprintf('create/%s/%s/from/%s/departing/%d/%d/%d', 
                 $params['carrier'], 
@@ -80,7 +83,12 @@ class Alerts extends RestClient
 
         $res = $this->request($apiCall, 
             [
-                "query" => ["type" => "JSON", "events" => $events, "deliverTo" => $this->config['deliver_to']]
+                "query" => [
+                    "type" => "JSON", 
+                    "name" => $alert_name,
+                    "events" => $events, 
+                    "deliverTo" => $this->config['deliver_to']
+                ]
             ]
         );
 
