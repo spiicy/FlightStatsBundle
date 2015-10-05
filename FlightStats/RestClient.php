@@ -39,7 +39,7 @@ class RestClient
             ]],
         ]);
 
-        return $client->get($apiCall, $params);
+        return $client->get($this->apiUrl . $apiCall, $params);
     }
 
 }
