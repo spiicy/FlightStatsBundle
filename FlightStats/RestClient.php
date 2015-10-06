@@ -31,14 +31,16 @@ class RestClient
     protected function request($apiCall, $params = array())
     {
         $client = new Client([
-            'base_url' => [$this->apiUrl, ['version' => 'v1.1']],
+            // 'debug' => true,
+            'base_uri' => $this->apiUrl,
             'defaults' => ['headers' => [
                 'appId' => $this->config['app_id'],
                 'appKey' => $this->config['app_key'],
                 'Content-Type' => 'application/json;charset=UTF-8',
             ]],
         ]);
-
+        $params['headers']["appId"] = $this->config['app_id'];
+        $params['headers']["appKey"] = $this->config['app_key'];
         return $client->get($apiCall, $params);
     }
 

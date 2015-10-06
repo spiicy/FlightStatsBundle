@@ -60,4 +60,15 @@ class FlightStats extends RestClient
         return new Methods\Airports($this->config, $api);
     }
 
+    /**
+     *
+     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Alerts
+     */
+    public function getAlerts()
+    {
+        $api = $this->apiUrl . 'alerts/rest/v1/json/';
+        
+        return new Methods\Alerts($this->config, $api);
+    }
+
 }
