@@ -1,9 +1,9 @@
 <?php
 
-namespace Spiiicy\Bundle\FlightStatsBundle;
+namespace Spiicy\Bundle\FlightStatsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SpiiicyFlightStatsBundle extends Bundle
+class SpiicyFlightStatsBundle extends Bundle
 {
 }
