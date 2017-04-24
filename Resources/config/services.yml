@@ -1,7 +1,7 @@
 parameters:
-    spiiicy_flightstats.class: Spiiicy\Bundle\FlightStatsBundle\FlightStats\FlightStats
+    spiicy_flightstats.class: Spiicy\Bundle\FlightStatsBundle\FlightStats\FlightStats
 
 services:
-    spiiicy_flightstats:
-      class: %spiiicy_flightstats.class%
-      arguments: [%spiiicy_flight_stats.config%]
+    spiicy_flightstats:
+      class: %spiicy_flightstats.class%
+      arguments: [%spiicy_flight_stats.config%]

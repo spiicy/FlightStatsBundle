@@ -1,5 +1,5 @@
 {
-    "name": "spiiicy/flightstats-bundle",
+    "name": "spiicy/flightstats-bundle",
     "type": "symfony-bundle",
     "description": "This Bundle provides a wrapper for the FlightStats API",
     "keywords": ["rest", "api", "flight", "flightstats"],
@@ -19,10 +19,10 @@
     },
 
     "autoload": {
-        "psr-0": { "Spiiicy\\Bundle\\FlightStatsBundle": "" }
+        "psr-0": { "Spiicy\\Bundle\\FlightStatsBundle": "" }
     },
 
-    "target-dir": "Spiiicy/Bundle/FlightStatsBundle",
+    "target-dir": "Spiicy/Bundle/FlightStatsBundle",
 
     "minimum-stability": "dev",
 

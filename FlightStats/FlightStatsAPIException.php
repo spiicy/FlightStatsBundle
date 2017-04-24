@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats;
+namespace Spiicy\Bundle\FlightStatsBundle\FlightStats;
 
 class FlightStatsAPIException extends \Exception {
 

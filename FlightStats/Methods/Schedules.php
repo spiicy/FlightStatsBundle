@@ -1,9 +1,9 @@
 <?php
 
-namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods;
+namespace Spiicy\Bundle\FlightStatsBundle\FlightStats\Methods;
 
-use Spiiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
-use Spiiicy\Bundle\FlightStatsBundle\FlightStats\FlightStatsAPIException;
+use Spiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
+use Spiicy\Bundle\FlightStatsBundle\FlightStats\FlightStatsAPIException;
 
 class Schedules extends RestClient {
 

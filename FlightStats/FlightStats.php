@@ -1,8 +1,8 @@
 <?php
 
-namespace Spiiicy\Bundle\FlightStatsBundle\FlightStats;
+namespace Spiicy\Bundle\FlightStatsBundle\FlightStats;
 
-use Spiiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
+use Spiicy\Bundle\FlightStatsBundle\FlightStats\RestClient;
 
 class FlightStats extends RestClient
 {
@@ -18,7 +18,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\FlightStatus
+     * @return \Spiicy\Bundle\FlightStatsBundle\FlightStats\Methods\FlightStatus
      */
     public function getFlightStatus()
     {
@@ -29,7 +29,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Schedules
+     * @return \Spiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Schedules
      */
     public function getSchedules()
     {
@@ -40,7 +40,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airlines
+     * @return \Spiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airlines
      */
     public function getAirlines()
     {
@@ -51,7 +51,7 @@ class FlightStats extends RestClient
 
     /**
      *
-     * @return \Spiiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airports
+     * @return \Spiicy\Bundle\FlightStatsBundle\FlightStats\Methods\Airports
      */
     public function getAirports()
     {
