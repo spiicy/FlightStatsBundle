@@ -3,5 +3,5 @@ parameters:
 
 services:
     spiicy_flightstats:
-      class: %spiicy_flightstats.class%
-      arguments: [%spiicy_flight_stats.config%]
+      class: "%spiicy_flightstats.class%"
+      arguments: [ "%spiicy_flight_stats.config%" ]
