@@ -1,7 +1,7 @@
 {
     "name": "spiicy/flightstats-bundle",
     "type": "symfony-bundle",
-	"version": "1.2.2",
+	"version": "1.2.3",
     "description": "This Bundle provides a wrapper for the FlightStats API",
     "keywords": ["rest", "api", "flight", "flightstats"],
     "homepage": "http://spiicy.io",
