@@ -54,6 +54,7 @@ class RestClient
         }));
 
         $client = new Client([
+            'debug'    => filter_var(@$this->config['debug'], FILTER_VALIDATE_BOOLEAN),
             'base_uri' => $this->apiUrl,
             'handler'  => $handler,
             'headers'  => [
